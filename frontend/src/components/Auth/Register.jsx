@@ -24,7 +24,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://jobseek-navy.vercel.app/api/v1/user/register",
         { name, phone, email, role, password, skills: role === "Job Seeker" ? skills : [] },
         {
           headers: {
