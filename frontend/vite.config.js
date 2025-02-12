@@ -11,9 +11,8 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // Ensures correct asset paths in production
+  base: "/", // Ensures correct asset paths on Vercel
   build: {
     outDir: "dist", // Vercel expects built files in "dist"
   },
 });
-
