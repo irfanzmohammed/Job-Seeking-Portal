@@ -1,24 +1,5 @@
-/* 
- */
+
  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
- /* @font-face {
-  font-family: 'Satoshi';
-  src: url('') format('woff2'), 
-       url('') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'satoshi-fallback';
-  src: local('Roboto'), 
-       url('') format('woff2'),
-       url('') format('woff'); 
-  font-weight: normal;
-  font-style: normal;
-} */
 
 @font-face {
   font-family: "Lato", sans-serif;
@@ -41,15 +22,7 @@
   overflow-x: hidden;
   font-family: "Lato", sans-serif; 
 }
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
-} */
 ::-webkit-scrollbar {
   display: none;
 }
@@ -1408,35 +1381,6 @@ nav.navbarShow{
   background-color:#001c40;
 }
 
-/* .profile-drawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 400px;
-  background-color:#fff;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 20px;
-} */
-
- /* .profile-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.profile-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.profile-details {
-  flex: 1;
-} */
 
 .close-btn {
   position: absolute;
@@ -1551,36 +1495,7 @@ nav.navbarShow{
   background-color: #0056b3;
 }
 
-/* CSS for Drive Details */
-/* .drive-details {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f8f9fa; 
-}
 
-.drive-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.drive-details p {
-  margin-bottom: 8px;
-}
-
-.drive-details strong {
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-.drive-details a {
-  color: #007bff; 
-}
-
-.drive-details a:hover {
-  text-decoration: underline;
-} */
 
 .drive-details {
   margin-top: 20px;
@@ -1757,54 +1672,9 @@ nav.navbarShow{
   cursor: pointer;
 }
 
-/* .logout-btn {
-  background-color: #ff0000;
-  color: #ffffff;
-} */
-
-/* .close-btn {
-  background-color: #606060; 
-  margin-top: 10px;
-} */
 
 /* Hover effects */
 .action-buttons button:hover {
   opacity: 0.9;
 }
 
-/* 
-.add-skill-input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 8px 12px;
-  font-size: 14px;
-  width: 100%;
-  margin-bottom: 16px;
-}
-
-
-.add-skill-btn {
-  background-color:black;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.add-skill-btn:hover {
-  background-color: #0056b3;
-}
-
-/* .logout-btn-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 16px;
-  background-color: #fff; 
-}  */
