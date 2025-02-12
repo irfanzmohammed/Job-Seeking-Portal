@@ -5,16 +5,18 @@
 // export default defineConfig({
 //   plugins: [react()],
 // })
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "./", // Ensures correct asset paths in production
   build: {
-    outDir: "dist", // Vercel expects built files in the "dist" directory
-    assetsDir: "assets", // Ensure assets are placed in the correct folder
+    outDir: "dist", // Vercel expects built files in "dist"
+    rollupOptions: {
+      input: "src/main.jsx", // Specify the correct entry file here
+    },
   },
 });
+
 
