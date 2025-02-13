@@ -14,7 +14,7 @@ const PoolCampusTracker = () => {
   useEffect(() => {
     const fetchPoolCampusDrives = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/v1/poolcampus/drives', {
+        const response = await axios.get('https://jobseek-navy.vercel.app/api/v1/poolcampus/drives', {
           withCredentials: true,
         });
         setPoolCampusDrives(response.data.poolCampusDrives);

@@ -17,7 +17,7 @@ const Jobs = () => {
       }
 
       try {
-        const response = await axios.get('http://localhost:4000/api/v1/job/getall', {
+        const response = await axios.get('https://jobseek-navy.vercel.app/api/v1/job/getall', {
           withCredentials: true,
         });
 
