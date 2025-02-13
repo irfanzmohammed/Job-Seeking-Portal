@@ -32,7 +32,7 @@ const PoolCampusDriveForm = () => {
     }
 
     try {
-      const response = await axios.post('https://jobseek-navy.vercel.app/api/v1/poolcampus/campusdrive', formData);
+      const response = await axios.post('http://localhost:4000/api/v1/poolcampus/campusdrive', formData);
 
       toast.success(response.data.message);
 

@@ -17,7 +17,7 @@ const ProfileDrawer = ({ user, onClose }) => {
 
   const fetchUserSkills = async () => {
     try {
-      const response = await axios.get('https://jobseek-navy.vercel.app/api/v1/user/skills', {
+      const response = await axios.get('http://localhost:4000/api/v1/user/skills', {
         withCredentials: true,
       });
       setSkills(response.data.skills);
@@ -28,7 +28,7 @@ const ProfileDrawer = ({ user, onClose }) => {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get('https://jobseek-navy.vercel.app/api/v1/user/logout', {
+      const response = await axios.get('http://localhost:4000/api/v1/user/logout', {
         withCredentials: true,
       });
       toast.success(response.data.message);
@@ -53,7 +53,7 @@ const ProfileDrawer = ({ user, onClose }) => {
       // Add each skill to the user's skills list using POST request
       for (const skill of newSkills) {
         const response = await axios.post(
-          'https://jobseek-navy.vercel.app/api/v1/user/skills/add',
+          'http://localhost:4000/api/v1/user/skills/add',
           { skill },
           { withCredentials: true }
         );

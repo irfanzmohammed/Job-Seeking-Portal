@@ -18,7 +18,7 @@ const MyApplications = () => {
     try {
       if (user && user.role === "Employer") {
         axios
-          .get("https://jobseek-navy.vercel.app/api/v1/application/employer/getall", {
+          .get("http://localhost:4000/api/v1/application/employer/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -27,7 +27,7 @@ const MyApplications = () => {
           });
       } else {
         axios
-          .get("https://jobseek-navy.vercel.app/api/v1/application/jobseeker/getall", {
+          .get("http://localhost:4000/api/v1/application/jobseeker/getall", {
             withCredentials: true,
           })
           .then((res) => {
