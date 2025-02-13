@@ -1,6 +1,4 @@
-
- @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @font-face {
   font-family: "Lato", sans-serif;
   src: url('/assets/Lato/Lato-Regular.ttf') format('truetype');
@@ -218,10 +216,10 @@ p {
 .footerShow {
   background:#001c40;;
   display: flex;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center; 
   padding: 25px 120px;
   align-items: center;
-  text-align: center; /* Center text within the div */
+  text-align: center; 
 }
 
 .footerShow div {
@@ -1397,7 +1395,7 @@ nav.navbarShow{
   color: #f00;
 } */
 
-/* ProfileDrawer Component Logout Button CSS */
+
 .logout-btn-container {
   display: flex;
   justify-content: center;
@@ -1436,9 +1434,7 @@ nav.navbarShow{
       margin-right: 0.5rem;
     }
 
-    /* app.css or your CSS file */
-
-/* Style for the "Add Skill" button */
+  
 .add-skill-button {
   background-color: #2D5649;
   color: white;
@@ -1449,9 +1445,9 @@ nav.navbarShow{
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the "Add Skill" button */
+
 .add-skill-button:hover {
-  background-color: #1e3a34; /* Darken the background color on hover */
+  background-color: #1e3a34; 
 }
 
 .drive-list {
@@ -1533,7 +1529,7 @@ nav.navbarShow{
 
 .pool-campus-drive-form-container {
   width: 100%;
-  max-width: 600px; /* Adjust max-width as needed */
+  max-width: 600px; 
   margin: 0 auto;
   padding: 20px;
 }
@@ -1566,7 +1562,7 @@ nav.navbarShow{
   border-radius: 4px;
 }
 
-/* CSS for Post Drive Button */
+
 
 .post-drive-button {
   display: block;
@@ -1585,7 +1581,7 @@ nav.navbarShow{
   background-color:#2D5649; 
 }
 
-/* ProfileDrawer CSS */
+
 
 .profile-drawer {
   position: fixed;
@@ -1604,7 +1600,7 @@ nav.navbarShow{
   border-bottom-left-radius: 20px; 
 }
 
-/* Profile header */
+
 .profile-header {
   display: flex;
   align-items: center;
@@ -1632,7 +1628,7 @@ nav.navbarShow{
   color: #606060;
 }
 
-/* Skills section */
+
 .profile-skills {
   margin-bottom: 20px;
 }
@@ -1653,12 +1649,11 @@ nav.navbarShow{
   color: #606060;
 }
 
-/* Add skill input */
+
 .add-skill-input {
   margin-bottom: 20px;
 }
 
-/* Action buttons */
 .action-buttons {
   margin-top: auto;
 }
@@ -1673,7 +1668,7 @@ nav.navbarShow{
 }
 
 
-/* Hover effects */
+
 .action-buttons button:hover {
   opacity: 0.9;
 }
