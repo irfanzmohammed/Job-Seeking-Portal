@@ -39,13 +39,16 @@ const App = () => {
         
         
       } catch (error) {
-        setIsAuthorized(false);
-       
-      }
+        console.error("Fetch User Error:", error.response?.data || error.message);
 
+        // 🚨 Fix: Don't override `isAuthorized` immediately
+        if (error.response?.status === 401) {
+          console.log("Unauthorized - User is not logged in");
+        }
+      }
     };
     fetchUser();
-  },[isAuthorized]);
+  },[setIsAuthorized, setUser]);
 
   return (
     <>
