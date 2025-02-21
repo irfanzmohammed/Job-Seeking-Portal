@@ -18,7 +18,6 @@ const Register = () => {
   const [role, setRole] = useState("");
   const [skills, setSkills] = useState([]);
 
-      setRole("");
       const { isAuthorized, setIsAuthorized } = useContext(Context);
 
   const handleRegister = async (e) => {
