@@ -28,14 +28,19 @@ const Login = () => {
         }
       );
       toast.success(data.message);
+      
       setEmail("");
       setPassword("");
       setRole("");
       setIsAuthorized(true);
+      
     } catch (error) {
       toast.error(error.response.data.message);
-    }
+     
+        }
+    
   };
+  
 
   if(isAuthorized){
     return <Navigate to={'/'}/>

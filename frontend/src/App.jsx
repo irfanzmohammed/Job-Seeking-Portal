@@ -1,5 +1,3 @@
-// import { Navigate } from "react-router-dom";
-// App.js
 import { useContext, useEffect } from "react";
 import "./App.css";
 import { Context } from "./main";
@@ -23,7 +21,8 @@ import PoolCampusTracker from "./components/Application/PoolCampusTracker";
 // import DriveDetailsPage from "./components/Application/DriveDetailsPage";
 
 const App = () => {
-  const { isAuthorized, setIsAuthorized, setUser } = useContext(Context);
+  const {  isAuthorized,setIsAuthorized, setUser } = useContext(Context);
+  
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -33,14 +32,20 @@ const App = () => {
             withCredentials: true,
           }
         );
-        setUser(response.data.user);
-        setIsAuthorized(true);
+        
+
+          setUser(response.data.user);
+          setIsAuthorized(true);
+        
+        
       } catch (error) {
         setIsAuthorized(false);
+       
       }
+
     };
     fetchUser();
-  }, [isAuthorized]);
+  },[isAuthorized]);
 
   return (
     <>

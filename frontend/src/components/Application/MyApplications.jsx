@@ -48,7 +48,7 @@ const MyApplications = () => {
   const deleteApplication = (id) => {
     try {
       axios
-        .delete(`http://localhost:4000/api/v1/application/delete/${id}`, {
+        .delete(`https://jobseek-navy.vercel.app/api/v1/application/delete/${id}`, {
           withCredentials: true,
         })
         .then((res) => {

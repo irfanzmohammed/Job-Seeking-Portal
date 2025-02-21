@@ -9,9 +9,11 @@ import PopularCategories from "./PopularCategories";
 
 const Home = () => {
   const { isAuthorized } = useContext(Context);
+ 
   if (!isAuthorized) {
     return <Navigate to={"/login"} />;
   }
+  
   return (
     <>
       <section className="homePage page">
