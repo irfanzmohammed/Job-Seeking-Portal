@@ -5,12 +5,14 @@ import toast from 'react-hot-toast';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import ProfileDrawer from './ProfileDrawer';
 import { Context } from '../../main';
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const { isAuthorized, setIsAuthorized, user } = useContext(Context);
-
+  const navigate = useNavigate(); 
   const handleLogout = async () => {
     try {
       const response = await axios.get('https://jobseek-navy.vercel.app/api/v1/user/logout', {
@@ -19,7 +21,10 @@ const Navbar = () => {
       toast.success(response.data.message);
       setIsAuthorized(false);
       setShowProfile(false); // Hide profile drawer on logout
-    } catch (error) {
+      navigate("/login");
+    }
+    
+     catch (error) {
       toast.error(error.response.data.message);
       setIsAuthorized(true);
     }
